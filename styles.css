@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "norsebold";
+    src: url("fonts/Norse-Bold.otf") format("opentype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body, .branding_section, .banner_content {
+    display: flex;
+}
+
+.branding_section {
+    position: absolute;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+}
+
+.banner_content, .odin_logo {
+    height: 5rem;
+}
+
+.banner_content > span {
+    display: flex;
+    font-size: 3rem;
+    color: white;
+    font-family: "norsebold";
+    align-items: center;
+}
+
+.background_image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.dark_banner {
+    position: absolute;
+    top: 30%;
+    background-color: black;
+    height: 5.5rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.banner_content {
+    position: relative;
+    top: 31%;
+    z-index: 0;
+    justify-content: center;
+    gap: 10px;
+}
+
+.credits_sections {
+    position: relative;
+    top: 85%;
+    font-size: 0.8rem;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.form_section {
+    position: relative;
+    left: 40%;
+}
